@@ -1,9 +1,90 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Hello, World!</title>
-    </head>
-    <body>
-        <p>Hello, World!</p>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Pham /Home</title>
+    <link href="image/favicon.ico" rel="icon" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px; 
+            border: 3px solid transparent; 
+            border-radius: 5px; 
+        }
+        nav ul li a.active {
+            font-weight: bold;
+            background-color: #fff; 
+            color: #333;
+            border-color: #fff;
+        }
+        section {
+            padding: 20px;
+        }
+        .profile-img {
+            display: block;
+            margin: 0 auto;
+            width: 400px; 
+            border-radius: 50%; 
+            margin-bottom: 20px;
+            transition: transform 0.5s ease; 
+        }
+        .profile-img:hover {
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span class="icon">&#x1F312;</span> Michael Pham</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">/Home</a></li>
+                <li><a href="projects.html">/Projects</a></li>
+                <li><a href="certifications.html">/Certifications</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2 style="text-align: center;">Michael Pham</h2>
+        <img src="image/profileimg.png" alt="" class="profile-img">
+        <h2>About Me</h2>
+        <p>Hello! My name is Michael and welcome to my portfolio. This website showcases some of my projects and certifications. Feel free to explore!</p>
+    </section>
+    <section>
+        <h2>Contact Me</h2>
+        <p>If you have any questions or would like to get in touch, you can reach me via email at [Your Email Address].</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+</body>
 </html>

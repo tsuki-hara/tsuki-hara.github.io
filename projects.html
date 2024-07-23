@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Pham /Projects</title>
+    <link href="image/favicon.ico" rel="icon" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+        }
+        header h1 {
+            margin: 0; 
+        }
+        nav {
+            text-align: center; 
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 3px solid transparent; 
+            border-radius: 5px;
+        }
+        nav ul li a.active {
+            font-weight: bold; 
+            background-color: #fff; 
+            color: #333; 
+            border-color: #fff;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .project-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .project-box {
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .project-image {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            transition: transform 0.3s; 
+        }
+        .project-image:hover {
+            filter: brightness(80%);
+            transform: scale(1.1);
+        }
+        .project-title {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+        .project-description {
+            margin: 0;
+        }
+        .project-tools {
+            margin-top: 10px;
+            display: block;
+            width: 100%;
+        }
+        .project-tools ul { 
+            padding: 0;
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: center; 
+        }
+        .project-tools ul li {
+        border: 1px solid #ddd; 
+        margin: 2px; 
+        padding: 8px 12px;
+        flex: 0 1 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span class="icon">&#x1F312;</span> Michael Pham</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">/Home</a></li>
+                <li><a href="projects.html" class="active">/Projects</a></li>
+                <li><a href="certifications.html">/Certifications</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2 style="text-align: center;">My Projects</h2>
+        <div class="project-container">
+            <div class="project-box">
+                <a href="" target="">
+                    <img src="image/bunnder.png" alt="Project 1" class="project-image">
+                </a>
+                <h3 class="project-title">Bundder</h3>
+                <p class="project-description" align="left">Bunnder is a social media application that enables users to create accounts and interact with others.
+                    It's built using React for the user interface and Firebase for storing user data and chat logs.</p>
+                <div class="project-tools">
+                    <ul>
+                        <li>FireBase</li>
+                        <li>JavaScript</li>
+                        <li>ReactJS</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="project-box">
+                <a href="" target="">
+                    <img src="image/fight.png" alt="Project 2" class="project-image">
+                </a>
+                <h3 class="project-title">Fight Gaming Software</h3>
+                <p class="project-description" align="left">Description of Project 2. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="project-tools">
+                    <ul>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project-box">
+                <a href="" target="">
+                    <img src="image/project1.png" alt="Project 3" class="project-image">
+                </a>
+                <h3 class="project-title">Flask Task List</h3>
+                <p class="project-description" align="left">Description of Project 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="project-tools">
+                    <ul>
+                        <li>Flask</li>
+                        <li>Python</li>
+                        <li>RESTful API</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project-box">
+                <a href="" target="">
+                    <img src="image/project1.png" alt="Project 4" class="project-image">
+                </a>
+                <h3 class="project-title">AWS Task Manager</h3>
+                <p class="project-description" align="left">Description of Project 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="project-tools">
+                    <ul>
+                        <li>Amazon Web Services</li>
+                        <li>Node.js</li>
+                        <li>RESTful API</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project-box">
+                <a href="" target="">
+                    <img src="image/resume-reviewer.jpg" alt="Project 5" class="project-image">
+                </a>
+                <h3 class="project-title">Resume Reviewer</h3>
+                <p class="project-description" align="left">Description of Project 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="project-tools">
+                    <ul>
+                        <li>Amazon Web Services</li>
+                        <li>Amazon S3</li>
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                        <li>Node.js</li>
+                        <li>OpenAI API</li>
+                        <li>RESTful API</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
